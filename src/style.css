@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding:0;
+    background-color: #ED4A24;
+}
+
+header {
+    padding: 15px;
+    background-color: #ED4A24;
+    color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 10px 5px -5px black;
+}
+
+h1,
+nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1080px;
+    margin: auto;
+  
+}
+
+label {
+    padding: 10px;
+    border-radius: 15px;
+    width: 100px;
+    font-size: 18px;
+}
+
+input[type=radio] {
+    visibility: hidden;
+    position: fixed;
+}
+
+h1>img {
+    filter: brightness(4) saturate(0%);
+    image-rendering: optimizeQuality;
+    height: 75px;
+}
+
+label:has(input[name="nav"]:checked) {
+    transition: background-color 200ms ease-in;
+    background-color: #f59e0b;
+    box-shadow: 0 5px 5px -5px grey ;
+}
+#content {
+    width: 100%;
+    color: white;
+    
+}
+
+.home-content {
+    position: relative;
+    z-index: -1;
+    background: url(./img/bundle\ box.png) no-repeat center center ;
+    background-size: cover;
+    padding-left:6px;
+    margin-left:-6px;
+    height:500px;
+}
+
+.home-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:25%;
+    padding-right:25%;
+    height:500px;
+    background-color: rgba(0, 0, 0, 0.303);
+    gap: 25px;
+    justify-content: center;
+    box-shadow: inset 0px -10px 5px -5px black;
+}
+
+.home-info>label {
+    width: max-content;
+    padding: 10px;
+    background-color: #ED4A24;
+}
+
+.home-featured-content{
+    text-align: center;
+    padding:25px;
+}

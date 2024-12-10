@@ -7,71 +7,17 @@
     <title>Leavenly Goods | Vancouver Bakery | Vancouver E-bakery</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            border:1px solid blue;
-            box-sizing: border-box;
-        }
-        body{
-            display:flex;
-            flex-direction: column;
-            gap:25px;
-        }
-        header {
-            padding: 15px;
-            background-color: #ED4A24;
-            color: white;
-            position: sticky;
-            top:0;
-        }
 
-        h1,nav {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            text-align: center;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 1080px;
-            margin: auto;
-        }
-
-        label {
-            padding: 10px;
-            border-radius: 15px;
-            width: 100px;
-            font-size: 18px;
-        }
-
-        input[type=radio] {
-            visibility: hidden;
-            position: fixed;
-        }
-        img{
-            filter: brightness(4) saturate(0%);
-            image-rendering: optimizeQuality;
-            height:75px;
-        }
-
-        label:has(input[name="nav"]:checked) {
-            background-color: #f59e0b;
-        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-            
             <h1><img src="img/LG-Icon-orange-transparent.svg" alt="">Leavenly Goods Bakery</h1>
             <nav>
                 <label for="home"><input type="radio" id="home" name="nav" checked>HOME</input></label> |
+                <label for="menu"><input type="radio" id="menu" name="nav">MENU</input></label> |
                 <label for="about"><input type="radio" id="about" name="nav">ABOUT</input></label> |
                 <label for="contact"><input type="radio" id="contact" name="nav">CONTACT</input></label>
             </nav>
@@ -79,10 +25,29 @@
     </header>
     <div class="content-container">
         <div id="content">
-            
+            <div class="home-content">
+                <div class="home-info">
+                    <h2>THE JOY IS IN THE MIX!</h2>
+                    <p>Here at Leavenly Goods, we take pride in the creations we make, ensuring only the highest quality
+                        ingredients are used.
+                        Our bakery offers a delightful mix of viennoiseries and classic Filipino baked goods, each made
+                        with the utmost care and attention to detail.
+                        Come experience your next favorite treat with us today!
+                    </p>
+                    <!--Change to a button and connect it to the radio buttons-->
+                    <label for="menu"><input type="radio" id="menu" name="nav">EXPLORE OUR MENU</input></label>
+                </div>
+            </div>
+
+            <div class="home-featured-content">
+                <h2>Featured Products</h2>
+            </div>
 
         </div>
     </div>
+    <footer>
+
+    </footer>
 
 </body>
 
