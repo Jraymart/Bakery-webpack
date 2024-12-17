@@ -5,6 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leavenly Goods | Vancouver Bakery | Vancouver E-bakery</title>
+
+    <style>
+        .menu-content {
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            margin-top: -5px;
+        }
+
+
+        .sidebar aside>label {
+            margin: 5px;
+            width: max-content;
+        }
+
+        .sidebar>aside {
+            position: sticky;
+            align-self: start;
+            top: 5rem;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .sidebar label:hover {
+            background-color: #f59e0b;
+            transition: background-color 200ms ease-out;
+            border-radius: 0;
+        }
+
+        aside label:has(input[name=category]:checked) {
+            background-color: #f59e0b;
+            border-radius: 0;
+        }
+
+        .sidebar {
+            height: 100%;
+            background-color: #ED4A24;
+            box-shadow: 5px 0px 5px -5px black;
+            padding: 15px;
+            z-index: 1;
+
+        }
+
+        .menu {
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4, 14.5rem);
+            grid-auto-rows: minmax(0, 400px);
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .card {
+            border: #ED4A24 1px solid;
+            box-shadow: 5px 5px 5px -5px #ED4A24;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            color: #ED4A24;
+            gap: 5px;
+            text-align: center;
+        }
+
+        .card>img {
+            width: 100%;
+            height: 12rem;
+            background-color: white;
+            object-fit: cover;
+        }
+
+        .card>button {
+            padding: 10px;
+            width: 10rem;
+            background-color: #f59e0b;
+            border: none;
+            border-radius: 15px;
+            color: white
+        }
+    </style>
 </head>
 
 <body>
@@ -21,116 +101,60 @@
     </header>
     <div class="content-container">
         <div id="content">
-            <div class="home-content">
-                <div class="home-info">
-                    <h2>THE JOY IS IN THE MIX!</h2>
-                    <p>Here at Leavenly Goods, we take pride in the creations we make, ensuring only the highest quality
-                        ingredients are used.
-                        Our bakery offers a delightful mix of viennoiseries and classic Filipino baked goods, each made
-                        with the utmost care and attention to detail.
-                        Come experience your next favorite treat with us today!
-                    </p>
-                    <!--Change to a button and connect it to the radio buttons-->
-                    <button id="menubtn" onclick="document.querySelector('#menu').click()">EXPLORE OUR MENU</button>
+            <div class="menu-content">
+                <div class="sidebar">
+                    <aside>
+                        <h2>Categories</h2>
+                        <label for="croissant">
+                            <input type="radio" id="croissant" name="category"></input>
+                            Croissants & Danishes
+                        </label>
+                        <hr>
+                        <label for="supreme">
+                            <input type="radio" id="supreme" name="category"></input>
+                            Supremes
+                        </label>
+                        <hr>
+                        <label for="bundle">
+                            <input type="radio" id="bundle" name="category"></input>
+                            Bundle Sets
+                        </label>
+                        <hr>
+                        <label for="bun">
+                            <input type="radio" id="bun" name="category"></input>
+                            Buns
+                        </label>
+                        <hr>
+                        <label for="frozen">
+                            <input type="radio" id="frozen" name="category"></input>
+                            Frozen Bake At Home
+                        </label>
+                        <hr>
+                        <label for="vegan">
+                            <input type="radio" id="vegan" name="category"></input>
+                            Sustainable Baking
+                        </label>
+                    </aside>
+
                 </div>
-
-            </div>
-
-            <div class="home-featured-content">
-                <h2>Featured Products</h2>
-                <div class="product-carousel">
-                    <div class="product-wrapper">
-                        <div class="product-slider">
-                            <div id="slide-1" class="slide">
-                                <div class="product">
-                                    <img src="./img/butter_croissant.webp" alt="butter croissant">
-                                    <h3>Butter Croissant</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/almond_croissant.jpg"
-                                        alt="almond croissant">
-                                    <h3>Double Baked Almond Croissant</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_double_baked_pistachio_croissant_1.jpg"
-                                        alt="pistachio croissant">
-                                    <h3>Double Baked Pistachio Croissant</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_pain_au_chocolat_1.jpg" alt="chocolate croissant">
-                                    <h3>Pain Au Chocolat</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_turon_turnover_banana_jackfruit_1.jpg"
-                                        alt="turon turnover">
-                                    <h3>Turon Turnover</h3>
-                                </div>
-                            </div>
-                            <div id="slide-2" class="slide">
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_supreme_matcha_1.jpg" alt="Matcha Supreme">
-                                    <h3>Matcha Supreme</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_supreme_strawberry_1-850x850.jpg"
-                                        alt="Strawberry Supreme">
-                                    <h3>Strawberry Supreme</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_supreme_tuxedo_1-850x850.jpg" alt="Tuxedo Supreme">
-                                    <h3>Tuxedo Supreme</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/jst_menu_item_supreme_ube_1-850x850.jpg" alt="Ube Supreme">
-                                    <h3>Ube Supreme</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/Supreme_Gingerbread-1.png" alt="Gingerbread Supreme">
-                                    <h3>Gingerbread Supreme</h3>
-                                </div>
-                            </div>
-                            <div id="slide-3" class="slide">
-                                <div class="product">
-                                    <img src="./img//bundle box.png" alt="Croissant Box">
-                                    <h3>Croissant Bundle Box</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/Supreme_Eggnog-1-850x851.png" alt="Eggnog Supreme">
-                                    <h3>Eggnog Supreme</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/Leavenly-Goods-Holiday-2021-7233-scaled-e1637527126643.jpg (1).webp"
-                                        alt="Gingerbread Cookie">
-                                    <h3>Gingerbread Cookie</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/Croissant_Butter_Frozen.png" alt="Frozen Butter Croissant">
-                                    <h3>Frozen Butter Croissant</h3>
-                                </div>
-                                <div class="product">
-                                    <img src="./img/Croissant_HamCheese_Frozen.png" alt="Frozen Ham and Cheese Croissant">
-                                    <h3>Frozen Ham & Cheese Croissant</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-nav">
-                            <a href="#slide-1"></a>
-                            <a href="#slide-2"></a>
-                            <a href="#slide-3"></a>
-                        </div>
+                <div class="menu">
+                    <div class="card">
+                        <img src="img/almond_croissant.jpg" alt="">
+                        <h4>Double Baked Almond Croissant</h4>
+                        <p>$5.99</p>
+                        <button>Add To Cart</button>
                     </div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
                 </div>
-            </div>
 
-            <div class="map-content">
-                <h2>Find us here!</h2>
-                <div class="mapframe">
-                    <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.9182386188404!2d-123.1293100230839!3d49.20211057645585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671110d300001%3A0x50ca5ceeffec7511!2sLeavenly%20Goods%20Bakery!5e0!3m2!1sen!2sca!4v1733976530083!5m2!1sen!2sca"
-                    height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                
             </div>
         </div>
     </div>

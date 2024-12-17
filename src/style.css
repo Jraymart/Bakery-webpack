@@ -21,8 +21,8 @@ header {
     color: white;
     position: sticky;
     top: 0;
-    box-shadow: 0px 10px 5px -5px black;
-    z-index: 1;
+    box-shadow: 0px 5px 5px -5px black;
+    z-index: 2;
 }
 
 h1,
@@ -60,7 +60,7 @@ h1>img {
     height: 75px;
 }
 
-label:has(input[name="nav"]:checked) {
+label:has(input[name="nav"]:checked), label:has(input[name="nav"]:hover) {
     transition: background-color 200ms ease-in;
     background-color: #f59e0b;
     box-shadow: 0 5px 5px -5px grey ;
@@ -72,6 +72,7 @@ label:has(input[name="nav"]:checked) {
     flex-direction: column;
 }
 footer{
+    padding:25px;
     align-self: center;
     margin-top: auto;
     color:white;
@@ -119,6 +120,7 @@ form>button:active{
     background-color: #d3890a;
 }
 footer>p{
+    padding:25px;
     grid-column: 1/4;
     text-align: center;
 }

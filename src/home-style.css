@@ -34,7 +34,7 @@
     background-color: rgba(0, 0, 0, 0.303);
     gap: 25px;
     justify-content: center;
-    box-shadow: inset 0px -10px 5px -5px black;
+    box-shadow: inset 0px -5px 5px -5px black;
 }
 
 .home-featured-content{
@@ -51,7 +51,7 @@
 .product-carousel{
     padding:25px;
     background-color: white;
-    box-shadow:inset 0px 10px 5px -5px grey, inset 0px -10px 5px -5px grey;
+    box-shadow:inset 0px 5px 5px -5px grey, inset 0px -5px 5px -5px grey;
     height: max-content;
 }
 
@@ -76,6 +76,7 @@
     background-color: #ED4A24;
     padding:10px;
     box-shadow: 0 5px 5px -5px grey;
+    border-radius: 25px;
 }
 .product{
     display:grid;
@@ -91,7 +92,7 @@
 }
 
 .carousel-nav{
-    margin-top: 10px;
+    margin-top: 5px;
     display:flex;
     column-gap:1rem;
     position: absolute;
