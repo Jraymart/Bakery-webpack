@@ -5,84 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leavenly Goods | Vancouver Bakery | Vancouver E-bakery</title>
-
     <style>
-        .menu-content {
-            display: grid;
-            grid-template-columns: 1fr 5fr;
-            margin-top: -5px;
-        }
-
-
-        .sidebar aside>label {
-            margin: 5px;
-            width: max-content;
-        }
-
-        .sidebar>aside {
-            position: sticky;
-            align-self: start;
-            top: 5rem;
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .sidebar label:hover {
-            background-color: #f59e0b;
-            transition: background-color 200ms ease-out;
-            border-radius: 0;
-        }
-
-        aside label:has(input[name=category]:checked) {
-            background-color: #f59e0b;
-            border-radius: 0;
-        }
-
-        .sidebar {
-            height: 100%;
-            background-color: #ED4A24;
-            box-shadow: 5px 0px 5px -5px black;
-            padding: 15px;
-            z-index: 1;
-
-        }
-
-        .menu {
+        .about-content {
             background-color: white;
-            display: grid;
-            grid-template-columns: repeat(4, 14.5rem);
-            grid-auto-rows: minmax(0, 400px);
-            padding: 20px;
-            gap: 20px;
-        }
-
-        .card {
-            border: #ED4A24 1px solid;
-            box-shadow: 5px 5px 5px -5px #ED4A24;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 5px;
+            grid-template-rows: 1fr 1fr 1fr;
             color: #ED4A24;
-            gap: 5px;
-            text-align: center;
-        }
-
-        .card>img {
-            width: 100%;
-            height: 12rem;
-            background-color: white;
-            object-fit: cover;
-        }
-
-        .card>button {
-            padding: 10px;
-            width: 10rem;
-            background-color: #f59e0b;
-            border: none;
-            border-radius: 15px;
-            color: white
         }
     </style>
 </head>
@@ -101,60 +28,13 @@
     </header>
     <div class="content-container">
         <div id="content">
-            <div class="menu-content">
-                <div class="sidebar">
-                    <aside>
-                        <h2>Categories</h2>
-                        <label for="croissant">
-                            <input type="radio" id="croissant" name="category"></input>
-                            Croissants & Danishes
-                        </label>
-                        <hr>
-                        <label for="supreme">
-                            <input type="radio" id="supreme" name="category"></input>
-                            Supremes
-                        </label>
-                        <hr>
-                        <label for="bundle">
-                            <input type="radio" id="bundle" name="category"></input>
-                            Bundle Sets
-                        </label>
-                        <hr>
-                        <label for="bun">
-                            <input type="radio" id="bun" name="category"></input>
-                            Buns
-                        </label>
-                        <hr>
-                        <label for="frozen">
-                            <input type="radio" id="frozen" name="category"></input>
-                            Frozen Bake At Home
-                        </label>
-                        <hr>
-                        <label for="vegan">
-                            <input type="radio" id="vegan" name="category"></input>
-                            Sustainable Baking
-                        </label>
-                    </aside>
+            <div class="about-content">
+                <div class="about">
+                    <img src=" https://leavenlygoods.ca/wp-content/uploads/2023/03/Le-Cordon-Bleu-225x300.jpeg" alt="">
 
                 </div>
-                <div class="menu">
-                    <div class="card">
-                        <img src="img/almond_croissant.jpg" alt="">
-                        <h4>Double Baked Almond Croissant</h4>
-                        <p>$5.99</p>
-                        <button>Add To Cart</button>
-                    </div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </div>
-
+                <div class="cater"></div>
+                <div class="info"></div>
             </div>
         </div>
     </div>
