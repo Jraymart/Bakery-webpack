@@ -12,4 +12,4 @@
  	How to manipulate DOM to dynamically render webpages
 	How to import/export ES Modules and how they can depend on eachother
  # Acknowledgements
- 	All images and content were provided by Leavenlygoods.cs
+ 	All images and content were provided by Leavenlygoods.ca
