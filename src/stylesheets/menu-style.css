@@ -8,8 +8,11 @@
 .sidebar aside>label {
     margin: 5px;
     width: max-content;
+    padding: 5px;
 }
-
+aside hr {
+    border: 1px solid white;
+}
 .sidebar>aside {
     position: sticky;
     align-self: start;
