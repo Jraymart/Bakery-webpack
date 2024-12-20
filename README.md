@@ -13,3 +13,4 @@
 	How to import/export ES Modules and how they can depend on eachother
  # Acknowledgements
  	All images and content were provided by Leavenlygoods.ca
+[Live Code](https://jraymart.github.io/Bakery-webpack/)
