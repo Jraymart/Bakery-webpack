@@ -42,7 +42,7 @@ nav {
   
 }
 
-label {
+nav label {
     padding: 10px;
     border-radius: 15px;
     width: 100px;
@@ -108,17 +108,17 @@ a>img{
     filter: invert(1);
 }
 
-form, .resource-container, .follow-container{
+footer form, .resource-container, .follow-container{
     gap:10px;
     display: flex;
     flex-direction: column;
 }
-form>input, form>button{
+footer form>input, footer form>button{
     width:350px; height:50px;
     border: none;
     border-radius: 15px;
 }
-form>input{
+footer form>input{
     padding-left: 10px;
     color:#ED4A24
 }
