@@ -21,7 +21,7 @@
 
         .about {
             border-radius: 15px;
-            margin: 0 10%;
+            margin: 0 5%;
             grid-column: 1/3;
             display: flex;
             gap: 15px;
@@ -51,17 +51,18 @@
             display: flex;
             flex-direction: column;
             gap:15px;
-            margin-right: 20%;
+            margin-right: 10%;
             border-radius: 15px;
             justify-content: center;
         }
         .cater{
-            margin-left: 20%;
+            margin-left: 10%;
             grid-column: 1/2;
             display: flex;
         }
         .cater>img{
           width:50%;
+          object-fit: cover;
           border-radius: 0 15px 15px 0;
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
         }
@@ -78,4 +79,5 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width:50%;
         }
