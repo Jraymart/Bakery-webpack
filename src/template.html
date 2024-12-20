@@ -5,183 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leavenly Goods | Vancouver Bakery | Vancouver E-bakery</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            /* border:1px solid blue; */
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        header {
-            padding: 15px;
-            background-color: #ED4A24;
-            color: white;
-            position: sticky;
-            top: 0;
-            box-shadow: 0 5px 10px -5px grey;
-        }
-
-        h1,
-        nav {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            text-align: center;
-        }
-
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 1080px;
-            margin: auto;
-        }
-
-        label {
-            padding: 10px;
-            border-radius: 15px;
-            width: 100px;
-            font-size: 18px;
-        }
-
-        input[type=radio] {
-            visibility: hidden;
-            position: fixed;
-        }
-
-        h1>img {
-            filter: brightness(4) saturate(0%);
-            image-rendering: optimizeQuality;
-            height: 75px;
-        }
-
-        label:has(input[name="nav"]:checked) {
-            background-color: #f59e0b;
-        }
-
-        #content {
-            width: 100%;
-        }
-
-        .content-container {
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
-
-        .content-home {
-            background-color: #f59e0b;
-            color: white;
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            padding: 50px;
-            box-shadow: inset 0 -5px 5px -5px grey;
-        }
-
-        .hero-home>img {
-            border-radius: 15px;
-            height: 25vw;
-            width: 25vw;
-            object-fit: cover;
-            image-rendering: optimizeQuality;
-        }
-
-        .statement-home {
-            display: flex;
-            gap: 10px;
-            flex-direction: column;
-            width: 25%;
-            font-size: larger;
-
-        }
-
-        .statement-home>label {
-            background-color: #ED4A24;
-            text-align: center;
-            width: max-content;
-        }
-
-        .content-home-featured {
-            text-align: center;
-            font-size: larger;
-            padding: 25px;
-            width: 85vw;
-            left: 50%;
-            transform: translateX(-50%);
-            overflow: hidden;
-            position: relative;
-        }
-
-        .image-carousel {
-            display: flex;
-            width: 100%;
-            height: 400px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .image-group {
-            display: flex;
-            
-            flex-shrink: 0;
-            width: 100%;
-            /* Each group takes 100% of the carousel width */
-        }
-
-        .image-carousel-wrapper {
-            display: flex;
-            width: 100%;
-            /* Total width: 3 groups * 100% each */
-            animation: carousel 15s infinite linear;
-        }
-
-        @keyframes carousel {
-
-            0%,
-            20% {
-                transform: translateX(0);
-                /* Show first group */
-            }
-
-            33.33%,
-            53.33% {
-                transform: translateX(-100%);
-                /* Show second group */
-            }
-
-            66.66%,
-            100% {
-                transform: translateX(-200%);
-                /* Show third group */
-            }
-        }
-       
-
-        .image-group img {
-            width: 400px;
-            padding: 25px;
-            background-color: #ED4A24;
-            border-radius: 25px;
-            margin: auto;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div class="header-container">
-
-            <h1><img src="img/LG-Icon-orange-transparent.svg" alt="Leavenly Goods Logo">Leavenly Goods Bakery</h1>
+            <h1><img src="img/LG-Icon-orange-transparent.svg" alt="">Leavenly Goods Bakery</h1>
             <nav>
                 <label for="home"><input type="radio" id="home" name="nav" checked>HOME</input></label> |
                 <label for="menu"><input type="radio" id="menu" name="nav">MENU</input></label> |
@@ -192,55 +21,29 @@
     </header>
     <div class="content-container">
         <div id="content">
-            <div class="content-home">
-                <div class="hero-home"> <img src="img/bundle box.png" alt="Box of Croissants"></div>
-                <div class="statement-home">
-                    <h2>THE JOY IS IN THE MIX!</h2>
-                    <p>
-                        Here at Leavenly Goods, we pride ourselves in each creation we make using only the best
-                        ingredients.
-                        Our bakery offers a delightful mix of vennoiseries and classic Filipino baked goods, creafted
-                        with
-                        the utmost care and attention to detail.
-                        Grab your next memorable and delicious experience with us today!
-                    </p>
-                    <label for="menu"><input type="radio" id="menu" name="nav">EXPLORE OUR MENU</input></label>
-                </div>
-            </div>
-
-            <div class="content-home-featured">
-                <h2>Featured Items</h2>
-                <div class="image-carousel">
-                    <div class="image-carousel-wrapper">
-                        <div class="image-group">
-                            <img src="img/jst_menu_item_butter_croissant_v_1-360x360.jpg.webp" alt="">
-                            <img src="img/jst_menu_item_butter_croissant_v_1-360x360.jpg.webp" alt="">
-                            <img src="img/jst_menu_item_butter_croissant_v_1-360x360.jpg.webp" alt="">
-                            <img src="img/jst_menu_item_butter_croissant_v_1-360x360.jpg.webp" alt="">
-                            <img src="img/jst_menu_item_butter_croissant_v_1-360x360.jpg.webp" alt="">
-                        </div>
-                        <div class="image-group">
-                            <img src="img/jst_menu_item_double_baked_almond_croissant_1-360x360.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_almond_croissant_1-360x360.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_almond_croissant_1-360x360.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_almond_croissant_1-360x360.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_almond_croissant_1-360x360.jpg" alt="">
-                        </div>
-                        <div class="image-group">
-                            <img src="img/jst_menu_item_double_baked_pistachio_croissant_1.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_pistachio_croissant_1.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_pistachio_croissant_1.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_pistachio_croissant_1.jpg" alt="">
-                            <img src="img/jst_menu_item_double_baked_pistachio_croissant_1.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+               
+        </div>
+    </div>
+    <footer>
+        <div class="resource-container">
+            <h3>Resources</h3>
+            <button onclick="document.querySelector('#about').click()">About</button>
+            <button onclick="document.querySelector('#contact').click()">Contact Us</button>
+        </div>
+        <div class="follow-container">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="img/facebook.svg" alt="">Facebook</a>
+            <a href="#"><img src="img/instagram.svg" alt="">Instagram</a>
         </div>
 
-
-    </div>
-    </div>
+        <div class="subscribe-container">
+            <form action="#">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+        <p>@2024 Jraymart</p>
+    </footer>
 
 </body>
 
