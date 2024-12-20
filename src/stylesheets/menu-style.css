@@ -42,14 +42,14 @@ aside label:has(input[name=category]:checked) {
 .menu {
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(4, 14.5rem);
+    grid-template-columns: repeat(auto-fit,15rem);
     grid-auto-rows: minmax(0, 400px);
     padding: 20px;
     gap: 20px;
 }
 
 .card {
-    border: #ED4A24 1px solid;
+    border: #ED4A24 2px solid;
     box-shadow: 5px 5px 5px -5px #ED4A24;
     display: flex;
     flex-direction: column;
@@ -59,6 +59,7 @@ aside label:has(input[name=category]:checked) {
     color: #ED4A24;
     gap: 5px;
     text-align: center;
+    border-radius: 15px;
 }
 
 .card>img {

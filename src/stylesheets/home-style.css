@@ -73,16 +73,14 @@
 .product>img{
     width: 250px;
     height:250px;
-    background-color: #ED4A24;
-    padding:10px;
-    box-shadow: 0 5px 5px -5px grey;
-    border-radius: 25px;
+    border:#ED4A24 2px solid;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 .product{
     display:grid;
     grid-template-columns: 250px;
     grid-template-rows: 250px 10%;
-  
     gap:15px;
     color:#ED4A24
 }
